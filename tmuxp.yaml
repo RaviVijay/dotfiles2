@@ -1,0 +1,52 @@
+session_name: 4-pane-split
+windows:
+- window_name: hw_rtl_questions
+  layout: tiled
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd ~/Learn/Hardware/hw_interview_questions/build/rtl/mcp_formulation           # run multiple commands in this pane
+    - echo second pane         # pane no. 2
+- window_name: Blas
+  layout: tiled
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Box Sync/Work (ravi.vijayakumar@broadcom.com)/LinearAlgebra/BlasAccelerator          # run multiple commands in this pane
+    - echo second pane         # pane no. 2
+- window_name: Udacity
+  layout: tiled
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Learn/Udacity/machine-learning/projects_modified          # run multiple commands in this pane
+    - echo second pane         # pane no. 2
+- window_name: Jeremy DL Course
+  layout: tiled
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Learn/DeepLearning/DeepLearningCourse/July_1_2017/courses        # run multiple commands in this pane
+    - echo second pane         # pane no. 2
+- window_name: Read
+  layout: tiled
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Learn/DeepLearning/DL_Paper_Summaries        # run multiple commands in this pane
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Learn/DeepLearningHardware/DL_Papers_Summaries        # run multiple commands in this pane
+- window_name: Play
+  layout: tiled
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Learn/DeepLearning/Play        # run multiple commands in this pane
+    - shell_command:           # pane no. 1
+        - cd /Users/rv939730/Learn/DeepLearningHardware/Play        # run multiple commands in this pane
