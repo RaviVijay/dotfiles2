@@ -1,0 +1,32 @@
+alias al="source ~/.bash_profile"
+alias j=jobs
+export WORKON_HOME=~/Envs
+alias ali="alias"
+alias g="grep "
+alias gl="grep -l "
+
+ali cl="clear"
+ali l="ls -ltr"
+ali v="vim "
+ali vc="vim ~/.bash_profile"
+ali va="vim ~/.aliases"
+ali mk="mkdir "
+ali 1="cd ../ "
+ali 2="cd ../../ "
+ali 3="cd ../../../ "
+ali 4="cd ../../../../ "
+ali ipn="jupyter lab "
+ali le="less"
+
+
+ali fa="fab -H lvnvda1747.lvn.broadcom.net -u rsekar -p jJ2@kK3# -- "
+
+function open_work_email {
+  open "https://mail.google.com/mail" # whatever your inbox is
+  }
+
+source /Users/rv939730/Learn/DeepLearningCourse/July_1_2017/courses/setup/aws-alias.sh
+alias py36="source activate py36"
+alias py27="source deactivate"
+
+
