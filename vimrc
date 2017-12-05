@@ -113,10 +113,12 @@ let &viminfo="%203,'200,/800,h,<500,:500,s150,r/tmp,r" . expand("$BKDIR") . "/tm
 " }}}4 ENDOF VIMINFO
 
 " --------------------------------------------------- }}}1 ENDOF BACKUPS, SWAPFILES, VIEWDIR, TMPDIR
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
 
-#call pathogen#infect()
+call pathogen#infect()
+execute pathogen#infect()
+
 nnoremap <F5> :GundoToggle<CR>
 
 
@@ -124,4 +126,6 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+set rtp+=/usr/local/opt/fzf
 

@@ -10,14 +10,15 @@ ali l="ls -ltr"
 ali v="vim "
 ali vc="vim ~/.bash_profile"
 ali va="vim ~/.aliases"
+ali vv="vim ~/.vimrc"
 ali mk="mkdir "
 ali 1="cd ../ "
 ali 2="cd ../../ "
 ali 3="cd ../../../ "
 ali 4="cd ../../../../ "
-ali ipn="jupyter lab "
+ali ipn="jupyter notebook "
 ali le="less"
-
+ali kgd="kg download -u ravivijay -p Selvijay5 -c "
 
 ali fa="fab -H lvnvda1747.lvn.broadcom.net -u rsekar -p jJ2@kK3# -- "
 
@@ -29,4 +30,6 @@ source /Users/rv939730/Learn/DeepLearningCourse/July_1_2017/courses/setup/aws-al
 alias py36="source activate py36"
 alias py27="source deactivate"
 
+
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
