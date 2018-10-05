@@ -1,4 +1,4 @@
-alias al="source ~/.bash_profile"
+alias al="source ~/.bashrc"
 alias j=jobs
 export WORKON_HOME=~/Envs
 alias ali="alias"
@@ -26,10 +26,12 @@ function open_work_email {
   open "https://mail.google.com/mail" # whatever your inbox is
   }
 
-source /Users/rv939730/Learn/DeepLearningCourse/July_1_2017/courses/setup/aws-alias.sh
+#source /Users/rv939730/Learn/DeepLearningCourse/July_1_2017/courses/setup/aws-alias.sh
 alias py36="source activate py36"
 alias py27="source deactivate"
 
 
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-
+ali ltmux="tmuxp load /home/ravivijay/Workflow/dotfiles2/tmuxp.yaml"
+ali vt="vim /home/ravivijay/Workflow/dotfiles2/tmuxp.yaml"
+ali tms="tmux kill-session"

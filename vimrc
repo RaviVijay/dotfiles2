@@ -53,7 +53,10 @@ set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
  
  
-
+map R :so $MYVIMRC
+map Q :qa<CR>
+map W :wa<CR>
+map Z :wq!<CR>
 nnoremap <esc> :noh<return><esc>
 
 syntax on
@@ -113,7 +116,7 @@ let &viminfo="%203,'200,/800,h,<500,:500,s150,r/tmp,r" . expand("$BKDIR") . "/tm
 " }}}4 ENDOF VIMINFO
 
 " --------------------------------------------------- }}}1 ENDOF BACKUPS, SWAPFILES, VIEWDIR, TMPDIR
-"autocmd VimEnter * NERDTree
+autocmd VimEnter * NERDTree
 "autocmd VimEnter * wincmd p
 
 call pathogen#infect()
@@ -127,5 +130,22 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
-set rtp+=/usr/local/opt/fzf
+"set rtp+=/usr/local/opt/fzf
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+
+" Experimental
+" Autoload vimrc
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
 
