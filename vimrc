@@ -116,7 +116,7 @@ let &viminfo="%203,'200,/800,h,<500,:500,s150,r/tmp,r" . expand("$BKDIR") . "/tm
 " }}}4 ENDOF VIMINFO
 
 " --------------------------------------------------- }}}1 ENDOF BACKUPS, SWAPFILES, VIEWDIR, TMPDIR
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 "autocmd VimEnter * wincmd p
 
 call pathogen#infect()
@@ -148,4 +148,5 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
-
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=

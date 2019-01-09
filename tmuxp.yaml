@@ -16,33 +16,44 @@ windows:
         - cd ~/Workflow/dotfiles2           # run multiple commands in this pane
         - echo Dotfiles        
     - shell_command:           # pane no. 2
-        - cd ~/.vim/bundle           # run multiple commands in this pane
-        - echo Vim Bundle      
+        - vt      
     - shell_command:           # pane no. 3
+        - cd ~/.vim/bundle           # run multiple commands in this pane
         - vim ~/.vimrc          # run multiple commands in this pane
     - shell_command:           # pane no. 3
-        - vim ~/Workflow/dotfiles2/List.txt          # run multiple commands in this pane
+        - vim ~/Workflow/dotfiles2/ListWorkFlow.txt          # run multiple commands in this pane
 - window_name: FastaiUser
   shell_command_before: 
     - cd ~/                    # run as a first command in all panes
   panes:
     - shell_command:           # pane no. 1
         - cd ~/Fastai/User          # run multiple commands in this pane
-    - echo second pane         # pane no. 2
+    - shell_command:           # pane no. 1
+        - cd ~/Fastai/User/notebooks          # run multiple commands in this pane
+- window_name: FastaiData
+  shell_command_before: 
+    - cd ~/                    # run as a first command in all panes
+  panes:
+    - shell_command:           # pane no. 1
+        - cd ~/Fastai/Data          # run multiple commands in this pane
+    - shell_command:           # pane no. 1
+        - cd /hdd/Data          # run multiple commands in this pane
 - window_name: FastaiDev
   shell_command_before: 
     - cd ~/                    # run as a first command in all panes
   panes:
     - shell_command:           # pane no. 1
         - cd ~/Fastai/CodeCommunity         # run multiple commands in this pane
-    - echo second pane         # pane no. 2
+    - shell_command:           # pane no. 1
+        - cd ~/Fastai/CodeCommunity         # run multiple commands in this pane
 - window_name: FastaiSelfCode
   shell_command_before: 
     - cd ~/                    # run as a first command in all panes
   panes:
     - shell_command:           # pane no. 1
         - cd ~/Fastai/CodeSelf         # run multiple commands in this pane
-    - echo second pane         # pane no. 2
+    - shell_command:           # pane no. 1
+        - cd ~/Fastai/CodeSelf         # run multiple commands in this pane
 - window_name: Read
   layout: tiled
   shell_command_before: 

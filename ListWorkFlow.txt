@@ -4,6 +4,13 @@ Find how to find a job status
 Phani's Phone mailer http://forums.fast.ai/t/training-metrics-as-notifications-on-mobile-using-callbacks/17330
 Google photos directory 
 Semantic search
+Airflow Google Videos
+Understand/Setup ssh for github
+Add Jupyter extensions
+make test is broken. Make it work.
+
+
+
 
 
 
